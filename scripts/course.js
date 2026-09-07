@@ -15,9 +15,7 @@ function displayCourses(courseArray) {
     courseArray.forEach(course => {
         const card = document.createElement('div');
         card.classList.add('course-card');
-        if (course.completed) {
-            card.classList.add('completed');
-        }
+        if (course.completed) card.classList.add('completed');
         card.innerHTML = `${course.subject} ${course.number}`;
         courseCards.appendChild(card);
     });
@@ -30,4 +28,4 @@ document.getElementById('all').addEventListener('click', () => displayCourses(co
 document.getElementById('wdd').addEventListener('click', () => displayCourses(courses.filter(c => c.subject === 'WDD')));
 document.getElementById('cse').addEventListener('click', () => displayCourses(courses.filter(c => c.subject === 'CSE')));
 
-displayCourses(courses); // Load all on start
+displayCourses(courses);
