@@ -127,7 +127,6 @@ section img {
 .course-card.completed {
   background-color: var(--secondary-color);
   color: white;
-  text-decoration: line-through;
 }
 
 footer {
