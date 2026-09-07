@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0 1rem; }
+
+header { display: flex; align-items: center; justify-content: space-between; }
+#hamburger { display: block; }
+nav ul { display: none; list-style: none; }
+nav.open ul { display: block; }
+.course-card.completed { background-color: #4CAF50; color: white; }

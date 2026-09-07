@@ -1,0 +1,5 @@
+@media screen and (min-width: 768px) {
+  #hamburger { display: none; }
+  nav ul { display: flex; justify-content: space-around; }
+  main { display: grid; grid-template-columns: 2fr 1fr; }
+}
