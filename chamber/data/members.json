@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Lagos Textiles Ltd",
+            "address": "15 Marina Rd, Lagos Island, Lagos 100001",
+            "phone": "+234 1 234 5678",
+            "website": "https://lagostextiles.ng",
+            "image": "business1.jpg",
+            "membership": 3,
+            "category": "Retail"
+        },
+        {
+            "name": "Abuja Tech Hub",
+            "address": "23 Ahmadu Bello Way, Abuja FCT 900211",
+            "phone": "+234 9 876 5432",
+            "website": "https://abujatech.ng",
+            "image": "business2.jpg",
+            "membership": 3,
+            "category": "Technology"
+        },
+        {
+            "name": "Port Harcourt Foods",
+            "address": "45 Aba Rd, Port Harcourt, Rivers 500001",
+            "phone": "+234 84 123 456",
+            "website": "https://phfoods.ng",
+            "image": "business3.jpg",
+            "membership": 2,
+            "category": "Food"
+        },
+        {
+            "name": "Kano Agro Farms",
+            "address": "7 Zaria Rd, Kano, Kano 700001",
+            "phone": "+234 64 555 123",
+            "website": "https://kanoagro.ng",
+            "image": "business4.jpg",
+            "membership": 2,
+            "category": "Agriculture"
+        },
+        {
+            "name": "Ibadan Medical Center",
+            "address": "88 Ring Rd, Ibadan, Oyo 200001",
+            "phone": "+234 2 345 6789",
+            "website": "https://ibadanmedical.ng",
+            "image": "business5.jpg",
+            "membership": 3,
+            "category": "Healthcare"
+        },
+        {
+            "name": "Enugu Auto Works",
+            "address": "12 Ogui Rd, Enugu, Enugu 400001",
+            "phone": "+234 42 111 222",
+            "website": "https://enuguauto.ng",
+            "image": "business6.jpg",
+            "membership": 1,
+            "category": "Automotive"
+        },
+        {
+            "name": "Benin Craft Collective",
+            "address": "5 Sapele Rd, Benin City, Edo 300001",
+            "phone": "+234 52 333 444",
+            "website": "https://benincraft.ng",
+            "image": "business7.jpg",
+            "membership": 1,
+            "category": "Arts"
+        }
+    ]
+}

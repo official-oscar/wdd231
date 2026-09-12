@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benin City Chamber of Commerce | Business Directory</title>
+    <meta name="description"
+        content="Official directory of Benin City Chamber of Commerce members in Edo State, Nigeria">
+    <meta name="author" content="Osarugue Uwagboe">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Benin City Chamber of Commerce Directory">
+    <meta property="og:description" content="Find local businesses in Benin City, Edo State, Nigeria">
+    <meta property="og:image" content="https://official-oscar.github.io/wdd231/chamber/images/og-preview.png">
+    <meta property="og:url" content="https://official-oscar.github.io/wdd231/chamber/directory.html">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Benin City Chamber of Commerce Logo">
+            <h1>Benin City Chamber of Commerce</h1>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+        <div class="menu">
+            <button id="grid" aria-label="Grid View">Grid</button>
+            <button id="list" aria-label="List View">List</button>
+        </div>
+        <article id="cards" class="grid"></article>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Benin City Chamber of Commerce</strong></p>
+            <p>5 Sapele Rd, Benin City, Edo State 300001, Nigeria</p>
+            <p>info@benincitychamber.ng</p>
+            <p>+234 52 000 0000</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.svg"
+                    alt="YouTube Icon"></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter.svg"
+                    alt="Twitter Icon"></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.svg"
+                    alt="LinkedIn Icon"></a>
+        </div>
+        <div class="footer-project">
+            <p>WDD 231 Class Project</p>
+            <p>Osarugue Uwagboe</p>
+            <p>&copy; <span id="currentyear"></span> Benin City Chamber</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
