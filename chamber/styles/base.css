@@ -136,6 +136,34 @@ footer {
 
 footer img {
     width: 30px;
+    height: 30px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    padding: 6px;
+}
+
+.footer-social a:hover {
+    background-color: var(--secondary-color);
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    filter: none;
 }
 
 /* HERO */
