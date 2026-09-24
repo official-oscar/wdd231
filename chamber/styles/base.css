@@ -1,11 +1,9 @@
 :root {
     --primary-color: #0D2C54;
-    /* Navy */
     --secondary-color: #BFA100;
-    /* Gold */
     --background-color: #F5F5F5;
     --text-color: #222;
-    --font-family: 'Lato', sans-serif;
+    --font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -22,15 +20,19 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: #0d2c54;
     color: white;
-    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: relative;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
 }
 
 header img {
@@ -38,15 +40,24 @@ header img {
     height: 50px;
 }
 
-nav ul {
+/* UNIVERSAL MENU BUTTON - hidden on desktop */
+#menu, #menu-button {
     display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* UNIVERSAL NAVIGATION - works for id and class */
+#navigation, .navigation {
+    display: flex;
     list-style: none;
+    gap: 1rem;
 }
 
-nav ul.open {
-    display: block;
-}
-
+#navigation a, .navigation a,
 nav a {
     color: white;
     text-decoration: none;
@@ -54,16 +65,10 @@ nav a {
     display: block;
 }
 
+#navigation a.active, .navigation a.active,
 nav a.active {
-    border-bottom: 2px solid var(--secondary-color);
-}
-
-#menu-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
+    border-bottom: 3px solid #bfa100;
+    font-weight: bold;
 }
 
 main {
@@ -161,7 +166,6 @@ footer img {
 .footer-social img {
     width: 24px;
     height: 24px;
-    filter: none;
 }
 
 /* HERO */
@@ -198,13 +202,6 @@ footer img {
     padding: 1rem;
 }
 
-/*.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    background: #fff;
-}*/
-
 .spotlights {
     grid-column: 1 / -1;
 }
@@ -229,12 +226,35 @@ footer img {
     margin: 0 auto;
 }
 
+/* MOBILE */
+@media (max-width: 700px) {
+  #menu, #menu-button {
+    display: block;
+  }
+  #menu::before, #menu-button::before { content: "☰"; }
+  #menu.open::before, #menu-button.open::before { content: "✕"; }
+
+  #navigation, .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #0d2c54;
+    z-index: 100;
+  }
+  #navigation.open, .navigation.open { display: flex; }
+}
+
 @media screen and (min-width: 768px) {
     .home-grid {
         grid-template-columns: 2fr 1fr;
     }
-
     .spotlight-container {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    #cards.grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }

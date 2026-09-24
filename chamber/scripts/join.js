@@ -18,3 +18,10 @@ Object.keys(modals).forEach(btnId => {
 document.querySelectorAll('dialog .close').forEach(btn => {
   btn.addEventListener('click', () => btn.closest('dialog').close());
 });
+
+const menuBtn = document.getElementById('menu');
+const nav = document.querySelector('.navigation');
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('open');
+  nav.classList.toggle('open');
+});
