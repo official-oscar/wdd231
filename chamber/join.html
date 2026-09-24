@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | Benin City Chamber of Commerce</title>
+  <meta name="description" content="Apply to join the Beni Chamber of Commerce membership">
+  <meta name="author" content="Osarugue Uwagboe">
+  <link rel="icon" href="images/favicon.ico">
+  <!-- My existing base CSS -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <span>Chamber Logo</span>
+    <button id="menu" aria-label="Menu"></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Join the Chamber</h1>
+  <div class="join-layout">
+    
+    <form method="get" action="thankyou.html" class="form">
+      <h2>Membership Application</h2>
+
+      <label>First Name*
+        <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+      </label>
+
+      <label>Last Name*
+        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+      </label>
+
+      <label>Organizational Title
+        <input type="text" name="orgTitle" title="Enter your organizational title - min 7 characters, letters, hyphens and spaces only" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+      </label>
+
+      <label>Email*
+        <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="john@example.com" required>
+      </label>
+
+      <label>Mobile Phone*
+        <input type="tel" name="phone" title="Enter your mobile number" autocomplete="tel" required>
+      </label>
+
+      <label>Business / Organization Name*
+        <input type="text" name="organization" title="Enter your business name" autocomplete="organization" required>
+      </label>
+
+      <fieldset>
+        <legend>Membership Level</legend>
+        <label><input type="radio" name="membership" value="np" required> NP Membership - Free for Non-Profit</label>
+        <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+        <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+        <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+      </fieldset>
+
+      <label>Business Description
+        <textarea name="description" title="Describe your business"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Submit Application">
+    </form>
+
+    <section class="cards">
+      <div class="card np">
+        <h3>NP Membership</h3>
+        <p>For Non-Profits - No Fee</p>
+        <button id="btn-np">Learn More</button>
+      </div>
+      <div class="card bronze">
+        <h3>Bronze Membership</h3>
+        <p>$100/year</p>
+        <button id="btn-bronze">Learn More</button>
+      </div>
+      <div class="card silver">
+        <h3>Silver Membership</h3>
+        <p>$250/year</p>
+        <button id="btn-silver">Learn More</button>
+      </div>
+      <div class="card gold">
+        <h3>Gold Membership</h3>
+        <p>$500/year</p>
+        <button id="btn-gold">Learn More</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- 4 MODALS -->
+  <dialog id="modal-np"><h3>NP Benefits</h3><p>Perfect for non-profits:</p><ul><li>Directory listing</li><li>Networking events</li></ul><button class="close">Close</button></dialog>
+  <dialog id="modal-bronze"><h3>Bronze Benefits</h3><ul><li>NP benefits +</li><li>1 training/quarter</li><li>Social media highlight</li><li>Event discounts 10%</li></ul><button class="close">Close</button></dialog>
+  <dialog id="modal-silver"><h3>Silver Benefits</h3><ul><li>Bronze +</li><li>Homepage spotlight</li><li>25% event discounts</li><li>3 trainings/quarter</li></ul><button class="close">Close</button></dialog>
+  <dialog id="modal-gold"><h3>Gold Benefits</h3><ul><li>Silver +</li><li>Premium spotlight & ads</li><li>50% event discounts</li><li>Free expo booth</li><li>VIP networking</li></ul><button class="close">Close</button></dialog>
+
+</main>
+
+<footer><p>&copy; <span id="year"></span> Chamber</p></footer>
+</body>
+</html>

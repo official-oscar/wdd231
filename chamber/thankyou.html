@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Osarugue Uwagboe">
+<title>Thank You | Chamber</title>
+<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+<header>...</header>
+<main>
+  <h1>Thank You for Joining!</h1>
+  <p>We received your application.</p>
+  <div id="formData" style="background:#f4f4f4; padding:1rem; margin-top:1rem;"></div>
+</main>
+<script>
+  const getString = window.location.search;
+  const myInfo = new URLSearchParams(getString);
+  document.getElementById('formData').innerHTML = `
+    <p><strong>First Name:</strong> ${myInfo.get('firstName')}</p>
+    <p><strong>Last Name:</strong> ${myInfo.get('lastName')}</p>
+    <p><strong>Email:</strong> ${myInfo.get('email')}</p>
+    <p><strong>Phone:</strong> ${myInfo.get('phone')}</p>
+    <p><strong>Organization:</strong> ${myInfo.get('organization')}</p>
+    <p><strong>Date:</strong> ${myInfo.get('timestamp')}</p>
+  `;
+</script>
+</body>
+</html>
