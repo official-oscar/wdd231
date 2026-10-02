@@ -1,0 +1,85 @@
+:root {
+    --primary: #0D3B2E;
+    --secondary: #FDB913;
+    --accent: #E63946;
+    --bg: #FFF8E7;
+    --text: #1A1A1A;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary); }
+
+header h1 {
+    background-color: var(--primary);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-left: 10px solid var(--secondary);
+}
+
+h2 { margin-top: 1rem; border-bottom: 3px solid var(--secondary); padding-bottom: 0.3rem; }
+
+section {
+    margin: 1.5rem 0;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.colors { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    border: 2px solid #000;
+    color: white;
+}
+
+.primary { background-color: var(--primary); }
+.secondary { background-color: var(--secondary); color: #000; }
+.accent { background-color: var(--accent); }
+.bg { background-color: var(--bg); color: #000; border: 1px solid #000; }
+
+.cta-example {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.cta-example:hover { background-color: var(--accent); color: white; }
+
+.wireframe {
+    border: 2px dashed var(--primary);
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.wireframe img { max-width: 100%; border: 1px solid #ccc; margin-top: 0.5rem; }
+
+footer { text-align: center; background: var(--primary); color: white; padding: 1rem; margin-top: 2rem; }
+
+ul { margin-left: 1.5rem; }
+.font-mont { font-family: 'Montserrat', sans-serif; }
+.font-poppins { font-family: 'Poppins', sans-serif; }

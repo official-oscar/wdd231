@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+/* @media (min-width: 700px) {
     #menu-button {
         display: none;
     }
@@ -16,5 +16,37 @@
     footer {
         grid-template-columns: 1fr 1fr 1fr;
         text-align: left;
+    }
+} */
+
+@media (min-width: 700px) {
+    #menu-button, #menu {
+        display: none;
+    }
+
+    #navigation, .navigation {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        position: static;
+        width: auto;
+        background: transparent;
+    }
+
+    #cards.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .spotlight-container {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
