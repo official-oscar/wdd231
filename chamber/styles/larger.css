@@ -1,52 +1,48 @@
-/* @media (min-width: 700px) {
-    #menu-button {
-        display: none;
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card1"
+            "card2 card3"
+            "card4 card5"
+            "card6 card7"
+            "card8 card8";
     }
-
-    nav ul {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    #cards.grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    footer {
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: left;
-    }
-} */
+}
 
 @media (min-width: 700px) {
-    #menu-button, #menu {
-        display: none;
-    }
+    #menu, #menu-button { display: none; }
 
     #navigation, .navigation {
-        display: flex;
-        justify-content: flex-end;
-        gap: 1rem;
+        display: flex !important;
         position: static;
+        flex-direction: row;
         width: auto;
-        background: transparent;
+        background-color: var(--primary-color);
+        justify-content: flex-end;
     }
 
-    #cards.grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    .home-grid { grid-template-columns: 2fr 1fr; }
+    .spotlight-container { grid-template-columns: 1fr 1fr 1fr; }
+    #cards.grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    footer { grid-template-columns: 1fr 1fr 1fr; text-align: left; }
+    .join-layout { grid-template-columns: 1fr 380px; }
+}
 
-    footer {
+@media (min-width: 1025px) {
+    .discover-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        text-align: left;
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card8";
     }
-
-    .home-grid {
-        grid-template-columns: 2fr 1fr;
+    .discover-card figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
     }
-
-    .spotlight-container {
-        grid-template-columns: 1fr 1fr 1fr;
+    .discover-card:hover figure img {
+        transform: scale(1.05);
+        filter: brightness(1.1) contrast(1.1);
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
 }

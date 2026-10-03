@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | Lagos Chamber of Commerce</title>
+    <meta name="description" content="Discover Lagos - demographics, attractions, and business opportunities">
+    <meta name="author" content="Osarugue Uwagboe">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Lagos Chamber Logo" width="50" height="50">
+        <span>Lagos Chamber of Commerce</span>
+        <button id="menu" aria-label="Open Menu"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-main">
+        <h1>Discover Lagos</h1>
+        
+        <div id="visit-message" class="visit-message"></div>
+
+        <div class="discover-grid" id="discover-grid">
+            <!-- Cards injected by JS -->
+        </div>
+
+        <aside class="demographics">
+            <h2>Lagos at a Glance</h2>
+            <p><strong>Population:</strong> 16 Million+</p>
+            <p><strong>GDP Growth:</strong> 6.5% annually</p>
+            <p><strong>Businesses:</strong> 5,000+ Chamber Members</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Lagos Chamber | Osarugue Uwagboe | WDD231</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
+</body>
+</html>
