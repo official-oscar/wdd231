@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover Naija Hits | Burna Boy, Ayra Starr, Davido</title>
+<meta name="description" content="Discover 20+ Afrobeats songs and Nollywood movies via live iTunes API. View details in modal and save to watchlist.">
+<meta name="author" content="Osarugue Uwagboe">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="styles/base.css"><link rel="stylesheet" href="styles/larger.css">
+<script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+<header><div class="logo">Naija Pop Hub</div><button id="menu" aria-label="Open navigation menu"></button>
+<nav id="navigation"><a href="index.html">Home</a><a href="discover.html" class="active">Discover</a><a href="watchlist.html">Watchlist <span id="count"></span></a><a href="add.html">Suggest</a></nav></header>
+<main>
+<h1>Discover Naija Hits</h1>
+<div class="filters">
+<button data-term="Burna Boy" class="active">Burna Boy</button><button data-term="Ayra Starr">Ayra Starr</button><button data-term="Davido">Davido</button><button data-term="Wizkid">Wizkid</button><button data-term="Nollywood">Nollywood</button>
+<input type="text" id="search" placeholder="Search artist..." aria-label="Search artist">
+</div>
+<div id="gallery" class="card-grid"></div>
+<dialog id="detailModal" aria-label="Song details"><button id="closeModal" class="close" aria-label="Close modal">✕</button><div id="modalContent"></div></dialog>
+</main>
+<footer>
+  <p>&copy; 2026 Naija Pop Hub | <a href="attributions.html">Attributions</a> | <a href="site-plan.html">Site Plan</a> | <a href="https://www.loom.com/share/YOURVIDEOID" target="_blank">🎥 Video Demo</a></p>
+  <p>Author: Osarugue Uwagboe | WDD231 Final Project</p>
+</footer>
+</body>
+</html>

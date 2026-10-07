@@ -1,0 +1,7 @@
+@media (min-width:700px){
+#menu{display:none}
+#navigation{display:flex!important;position:static;flex-direction:row;width:auto;background:transparent;gap:1rem}
+#navigation a.active{border-left:none;border-bottom:3px solid var(--secondary);background:transparent}
+.hero{grid-template-columns:1fr 1fr;align-items:center}
+.card-grid{grid-template-columns:repeat(3,1fr)}
+}

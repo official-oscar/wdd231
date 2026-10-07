@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Thank You | Naija Pop Hub</title><meta name="description" content="Form submission received for Naija Pop Hub"><link rel="icon" href="images/favicon.ico"><link rel="stylesheet" href="styles/base.css"><link rel="stylesheet" href="styles/larger.css"><script defer>
+window.addEventListener('DOMContentLoaded',()=>{
+  const p=new URLSearchParams(window.location.search);
+  document.getElementById('display').innerHTML=`<h2>Thank you, ${p.get('name')||'Friend'}! 🙏</h2><div style="text-align:left;background:#FFF8E7;padding:1rem;border-radius:8px;margin:1rem 0;border-left:5px solid #FDB913"><p><strong>Title:</strong> ${p.get('title')||'N/A'}</p><p><strong>Type:</strong> ${p.get('type')||'N/A'}</p><p><strong>Email:</strong> ${p.get('email')||'N/A'}</p><p><strong>Reason:</strong> ${p.get('reason')||'N/A'}</p></div><p>We will review and add it soon!</p>`;
+});
+</script></head>
+<body>
+<header><div class="logo">Naija Pop Hub</div><nav id="navigation"><a href="index.html">Home</a><a href="discover.html">Discover</a></nav></header>
+<main><h1>Submission Received</h1><div id="display" class="card" style="margin-top:1rem"></div><a href="discover.html" class="cta" style="margin-top:1rem">Back to Discover</a><a href="index.html" class="cta" style="margin-left:.5rem;background:var(--primary);color:#fff;border-color:var(--primary)">Go Home</a></main>
+<footer><p>&copy; 2026 Naija Pop Hub</p></footer>
+</body>
+</html>
